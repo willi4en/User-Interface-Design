@@ -1,0 +1,571 @@
+
+/* #region Main Menu Label */
+#homeLabel {
+    font-size: 140px;
+    font-weight: normal;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* #endregion */
+
+/* #region Main Menu Div */
+#homeTitleDiv {
+    width: 100%;
+    height: 300px;
+    background-color: #04AA6D;
+    text-align: center;
+    margin-top: 60px;
+    line-height: 300px;
+    border-radius: 10px;
+}
+/* #endregion */
+
+/* #region Main Menu Login Button */
+#loginButton {
+    width: 300px;
+    height: 100px;
+    background-color: #04AA6D;
+    border-radius: 10px;
+    border: none;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: white;
+}
+/* #endregion */
+
+/* #region Button Div */
+#buttonDiv {
+    margin-top: 100px;
+    background-color: #f0faf6;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+/* #endregion */
+
+/* #region Input Text and Password */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+/* #endregion */
+
+/* #region Login Button */
+.loginbtn{
+    border-radius: 10px;
+    background-color: #04AA6D;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+}
+/* #endregion */
+  
+/* #region Button Hover*/
+button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* #endregion */
+  
+/* #region Cancel Button */
+.cancelbtn {
+    border-radius: 10px;
+    margin: 8px 0;
+    border: none;
+    width: auto;
+    padding: 10px 18px;
+    color: white;
+    background-color: #f44336;
+}
+/* #endregion */
+
+/* #region Create Account Button */
+.createbtn {
+    border-radius: 10px;
+    margin: 8px 0;
+    border: none;
+    width: auto;
+    padding: 10px 18px;
+    color: white;
+    background-color: #04AA6D;
+    float: right;
+}
+/* #endregion */
+
+/* #region Avatar Image */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+    margin-left: 50%;
+}
+  
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+    margin-left: 45%;
+}
+/* #endregion */
+
+/* #region Container */
+.container {
+    padding: 16px;
+    border-radius: 10px;
+}
+/* #endregion */
+
+/* #region Modal Background */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+/* #endregion */
+
+/* #region Modal Content */
+.modal-content {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+/* #endregion */
+
+/* #region Login & Create Account Animations */
+/* Add Zoom Animation */
+.animate {
+-webkit-animation: animatezoom 0.6s;
+animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+from {-webkit-transform: scale(0)} 
+to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+from {transform: scale(0)} 
+to {transform: scale(1)}
+}
+/* #endregion */
+
+/* #region Plant Page */
+.plantPage {
+    display: none;
+    grid-template-rows: auto auto;
+    grid-template-columns: 220px auto;
+}
+/* #endregion */
+
+/* #region Top Plant Menu*/
+.topmenu {
+    background-color: rgb(94, 224, 129, 0.5);
+    border: none;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    padding: 5px 0px 5px 5px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+}
+/* #endregion */
+
+/* #region Home Button */
+.menubtn {
+    position: relative;
+    /* background-color: rgb(55, 148, 108, 0.5); */
+    width: 50px;
+    height:50px;
+    /* border: none;
+    border-radius: 10px; */
+    vertical-align: middle;
+    align-content: center;
+    text-align: center;
+    border: none;
+    margin-right: 5px;
+    background: transparent;
+}
+.menubtn:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+/* #endregion */
+
+/* #region Title Label */
+.titleLabel {
+    position: absolute;
+    font-size: 40px;
+    color:#04AA6D;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    left: 45%;
+    top: 15px;
+}
+/* #endregion */
+
+/* #region Profile Modal */
+.profileModal {
+    position: relative;
+    z-index: 2;
+    display: none;
+    width: 200px;
+    height: 300px;
+    float: right;
+    border-radius: 10px;
+    border: none;
+    top: 50px;
+    flex-direction: column;
+}
+/* #endregion */
+
+/* #region Large Profile Image */
+.largeProfileImg {
+    width: 80px;
+    height: 80px;
+    margin-top: 5px;
+    margin-right: 5px;
+}
+/* #endregion */
+
+/* #region Profile Button*/
+.profilebtn {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+    float: right;
+    margin-right: 10px;
+}
+
+.profilebtn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* #endregion */
+
+/* #region Plant Menu */
+.plantMenu {
+    background-color: rgb(94, 224, 129, 0.5);
+    border: none;
+    width: 210px;
+    height: calc(100vh - 80px);
+    border-radius: 10px;
+    margin-top: 5px;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+}
+/* #endregion */
+
+/* #region Add Plant Button */
+.addBtn {
+    /* background-color: rgb(55, 148, 108, 0.5); */
+    border: none;
+    width: 40px;
+    height: 40px;
+    /* border-radius: 10px; */
+    margin-top: 5px;
+    margin-left: 5px;   
+    /* font-size: 60px;
+    font-weight: bolder;
+    color: #888;
+    text-align: center; 
+    line-height: 40px; */
+}
+
+.addBtn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* #endregion */
+
+/* #region Remove Plant Button */
+.removeBtn {
+    /* background-color: rgb(55, 148, 108, 0.5); */
+    border: none;
+    width: 40px;
+    height: 40px;
+    /* border-radius: 10px; */
+    margin-top: 5px;
+    margin-right: 5px; 
+    float: right;
+    /* font-size: 60px;
+    font-weight:bolder;
+    color: #888;
+    text-align: top;
+    line-height: 40px; */
+}
+.removeBtn:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+/* #endregion */
+
+/* #region Plant List */
+.plantList {
+    overflow: auto;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+    height: calc(100vh - 80px);
+}
+/* #endregion */
+
+/* #region Plant Button */
+.plantBtn {
+    background-color: rgb(35, 166, 109, 0.5);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    height: 60px;
+    margin-top: 5px;
+}
+/* #endregion */
+
+/* #region Plant Stats Div */
+.plantStatDiv {
+    width: 100%;
+    height: calc(100vh - 80px);
+    margin: 5px;
+    display: grid;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-template-columns: 10% auto auto auto 10%;
+    grid-template-rows: 60px 80px 80px 100px auto;
+}
+/* #endregion */
+
+/* #region Plant Stats Grid Definitions */
+.lightLevelDiv {
+    grid-row: 2;
+    grid-column: 2;
+}
+.waterLevelDiv{
+    grid-row: 3;
+    grid-column: 2;
+}
+.temperatureDiv {
+    grid-row: 4;
+    grid-column: 2;
+}
+.growthDiv {
+    grid-row: 3;
+    grid-column: 4;
+    margin-left: 50px;
+}
+
+.nameDiv {
+    grid-row-start: 1;
+    grid-row-end: 6;
+    grid-column: 3;
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 240px 30px;
+    text-align: center;
+}
+
+.datePlantedDiv {
+    grid-row: 2;
+    grid-column: 4;
+    margin-left: 50px;
+}
+
+.descriptionDiv {
+    grid-row: 4;
+    grid-column: 4;
+    margin-left: 50px;
+}
+/* #endregion */
+
+/* #region Graph Div */
+.graphDiv {
+    width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row: 5;
+    display: flex;       
+    margin-top: 10px;
+}
+/* #endregion */
+
+/* #region Graph Button Div */
+.graphButtonDiv {
+    width: 120px;
+    border-color: black;
+    
+}
+/* #endregion */
+
+/* #region Graph Buttons */
+.graphBtn {
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 48;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    float: right;
+    height: 40px;
+    width: 100px;
+}
+/* #endregion */
+
+/* #region Graph Container */
+.graphContainer {
+    float: right;
+    border-radius: 10px;
+    border: 2px solid darkgray;
+    padding: 5px;
+    width: 1000px;
+    height: 420px;
+}
+/* #endregion */
+
+/* #region Plant Image */
+.plantImage {
+    width: 240px;
+    height: 240px;
+    grid-column: 1;
+    grid-row: 1;
+    margin: auto;
+}
+
+.plantImage:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* #endregion */
+
+/* #region Plant Image Div */
+.plantImageDiv {
+    background-color: white;
+    border: 2px solid darkgray;
+    border-radius:  10px;
+    z-index: 2;
+    display: none;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column: 4;
+    position: relative;
+    bottom: 5px;
+    left: 0;
+    align-content: center;
+}
+/* #endregion */
+
+/* #region Plant Image Selection Image Style */
+.plantImageSelection {
+    width: 60px;
+    height: 60px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.plantImageSelection:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+/* #endregion */
+
+/* #region Stat Labels' Style */
+.statLabel {
+    font-size: 24px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #32a879;
+}
+/* #endregion */
+
+/* #region Stat Value Style */
+.statValue {
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* #endregion */
+
+/* #region Plant Name Label */
+.plantNameLabel {
+    grid-column: 1; 
+    grid-row: 2; 
+    margin-top: 5px;
+    font-size: 28px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #32a879;
+}
+/* #endregion */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
