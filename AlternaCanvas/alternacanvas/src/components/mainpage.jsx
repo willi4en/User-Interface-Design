@@ -1,17 +1,20 @@
 import React, { Component } from 'react';
 import Badge from 'react-bootstrap/Badge';
+import styles from './MainPageStyles.module.css'
 
 class MainMenu extends Component {
 
-    styleBackground = {
-        backgroundColor: 'white',
-        height: '100vh'
-    };
+
 
     render() {
         return (
-            <div style={this.styleBackground}>
-
+            <div className={styles.styleBackground}>
+                <div className={styles.styleRibbon}>
+                    <label className={styles.styleMainLabel}>Alterna-Canvas</label>
+                </div>
+                <div style={{height: '100vh', display: 'flex', alignItems: 'center'}}>
+                    <button className={styles.styleButton}>Login</button>
+                </div>
             </div>
         )
     }
