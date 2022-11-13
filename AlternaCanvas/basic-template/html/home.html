@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<!--#region Head-->
+<head class="myheader">
+    <meta charset="UTF-8">
+    <title>Smart Plants: Home</title>    
+    <link href="../css/style.css" rel="stylesheet">
+    
+</head>
+<!--#endregion-->
+
+<body style="background-color:#f0faf6;">
+    
+    <!--#region Main Menu & Login-->
+    <div id="homeDiv">
+        <div id="homeTitleDiv">
+            <label id="homeLabel">Smart Plants</label>
+        </div>
+        
+        <div id="buttonDiv">
+            <button id="loginButton" onclick="document.getElementById('loginDiv').style.display = 'block'">Login</button>
+        </div>
+        
+        <!--#region Login Menu-->
+        <div id="loginDiv" class="modal">
+            <form class="modal-content animate">
+                <div class="imgContainer">
+                    <img src="../_images/GenericAvatar.png" alt="Avatar" class="avatar" style="width: 150px; height: 150px">
+                </div>
+    
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input id="loginUsername" type="text" placeholder="Enter Username" name="uname" required>
+    
+                    <label for="psw"><b>Password</b></label>
+                    <input id="loginPassword" type="password" placeholder="Enter Password" name="psw" required>
+    
+                    <button id="loginBtn" type="submit" class="loginbtn">Login</button>
+                </div>
+    
+                <div class="container" style="background-color: #f1f1f1;">
+                    <button id="loginCancelBtn" type="button" class="cancelbtn">Cancel</button>
+                    <button id="createBtn" type="button" class="createbtn">Create Account</button>
+                </div>
+            </form>
+        </div>
+        <!--#endregion-->
+    
+        <!--#region Create Account Menu-->        
+        <div id="createAccountDiv" class="modal">
+            <form class="modal-content animate">
+                <div class="imgContainer">
+                    <img id="createAvatar" src="../_images/GenericAvatar.png" alt="Avatar" class="avatar" style="width: 150px; height: 150px">
+                </div>
+    
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input id="createUsername" type="text" placeholder="Create Username" name="uname" required>
+    
+                    <label for="psw"><b>Password</b></label>
+                    <input id="createPassword" type="password" placeholder="Create Password" name="psw" required>
+    
+                    <button id="createAccountBtn" type="submit" class="loginbtn">Create Account</button>
+                </div>
+    
+                <div class="container" style="background-color: #f1f1f1;">
+                    <button id="createCancelBtn" type="button" class="cancelbtn">Cancel</button>
+                </div>
+            </form>
+        </div>
+        <!--#endregion-->
+
+    </div>
+    <!--#endregion-->
+    
+    <!--#region Plant Menu-->
+    <div id="plantDiv" class="plantPage">
+
+        <!--#region Top Menu-->
+        <div id="menuDiv" class="topmenu">
+            <img id="homeBtn" class="menubtn" src="../_images/HomeIcon.png">
+            <label id="plantmenulabel" class="titleLabel">Smart Plants</label>
+            <img id="profileBtn" src="../_images/ProfileLightGreen.png" class="profilebtn">
+
+            <div id="profileModal" class="profileModal">
+                <form class="modal-content animate" style="border: none; border-radius: 10px; background-color: #dedede; width: 250px; height: 300px;">
+                    <div style="margin: 10px; display: flex; flex-direction:column">
+                        <img class="largeProfileImg" src="../_images/ProfileLightGreen.png">
+                        <label style="margin-top: 5px;"><b>Username:</b></label>
+                        <label style="margin-top: 5px;" id="usernameProfile"></label>
+                        <label style="margin-top: 5px;"><b>Date Started:</b></label>
+                        <label style="margin-top: 5px;" id="dateStartedProfile"></label>
+                    </div>
+                    <div style="background-color: #cccccc; border-radius: 10px; border: none; width: 100%; height: 50px; margin-top: 22px;">
+                        <button id="logOutBtn" type="button" class="cancelbtn" style="float: right; margin-right: 10px;">Log Out</button>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+        <!--#endregion-->
+
+        <!--#region Plant List-->
+        <div id="plantMenuDiv" class="plantMenu">
+            <img id="addPlant" class="addBtn" src="../_images/AddIcon.png">
+            <img id="removePlant" class="removeBtn" src="../_images/TrashIcon.png">
+            <div id="plantListDiv" class="plantList"></div>
+        </div>
+        <!--#endregion-->
+
+        <!--#region Add Plant Menu-->
+        <div id="addPlantDiv" class="modal">
+            <form class="modal-content animate">
+                <div class="container">
+                    <label for="name"><b>Plant Name</b></label>
+                    <input id="addPlantName" type="text" placeholder="Enter Plant Name" name="name" required>
+                    <label for="desc"><b>Description</b></label>
+                    <input id="addPlantDesc" type="text" placeholder="Enter Description" name="desc">
+                </div>
+    
+                <div class="container" style="background-color: #f1f1f1;">
+                    <button id="addPlantCancelBtn" type="button" class="cancelbtn">Cancel</button>
+                    <button id="addPlantBtn" type="button" class="createbtn">Add Plant</button>
+                </div>
+            </form>
+        </div>
+        <!--#endregion-->
+
+        <!--#region Plant Stats Display-->
+        <div id="plantStatDiv" class="plantStatDiv">
+            <div class="lightLevelDiv">
+                <label class="statLabel">Light Level (lm):</label>
+                <label id="lightLevel" class="statValue"></label>
+            </div>
+            <div class="nameDiv">
+                <img id="plantImage" class="plantImage">
+                <label id="plantName" class="plantNameLabel"></label>
+            </div>
+            <div class="waterLevelDiv">
+                <label class="statLabel">Water Level (%):</label>
+                <label id="waterLevel" class="statValue"></label>
+            </div>
+            <div class="temperatureDiv">
+                <label class="statLabel">Temperature (°F):</label>
+                <label id="temperature" class="statValue"></label>
+            </div>
+            <div class="datePlantedDiv">
+                <label class="statLabel">Date Planted:</label>
+                <label id="datePlanted" class="statValue"></label>
+            </div>
+            <div class="growthDiv">
+                <label class="statLabel">Growth (%):</label>
+                <label id="plantGrowth" class="statValue"></label>
+            </div>
+            <div class="descriptionDiv">
+                <label class="statLabel">Description:</label>
+                <label id="plantDesc" class="statValue"></label>
+            </div>
+            <div class="graphDiv">
+                <div class="graphButtonDiv">
+                    <button id="temperatureBtn" class="graphBtn">Temperature</button>
+                    <button id="waterLevelBtn" class="graphBtn">Water Level</button>
+                    <button id="lightLevelBtn" class="graphBtn">Light Level</button>
+                </div>
+                <div class="graphContainer">
+                    <canvas id="graphCanvas" style="width: 100%; height: 400px; margin: 5px 5px 5px 5px;"></canvas>
+                </div>
+            </div>
+            <div class="plantImageDiv" id="plantImageDiv">
+                <img id="plantSelection1" src="../_images/plant1.png" class="plantImageSelection">
+                <img id="plantSelection2" src="../_images/plant2.png" class="plantImageSelection">
+                <img id="plantSelection3" src="../_images/plant3.png" class="plantImageSelection">
+                <img id="plantSelection4" src="../_images/plant4.png" class="plantImageSelection">
+                <img id="plantSelection5" src="../_images/plant5.png" class="plantImageSelection">
+                <img id="plantSelection6" src="../_images/plant6.png" class="plantImageSelection">
+            </div>            
+        </div>
+        <!--#endregion-->
+
+    </div>
+    <!--#endregion-->
+
+    <script src="../js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</body>
+</html>

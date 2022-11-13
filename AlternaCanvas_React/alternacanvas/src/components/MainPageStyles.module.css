@@ -1,0 +1,17 @@
+
+
+.styleButton {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    background-color: indianred;
+    border-radius: 10px;
+    height: 120px;
+    width: 400px;
+    margin: auto;
+    border: none;
+};
+
+.styleButton:hover {
+    opacity: 0.6;
+}
