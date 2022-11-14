@@ -33,6 +33,7 @@ body {
 
 .title-container {
   width: 100%;
+  height: 250px;
   display: flex;
   flex: 1;
   justify-content: flex-start;
@@ -41,20 +42,6 @@ body {
   font-size: 42px;
   font-weight: bold;
   flex-direction: column;
-}
-
-.courseNavBar {
-  width: 120px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: lightgray;
-}
-
-.courseNavBar a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 16px;
 }
 
 .list-header{
@@ -69,4 +56,26 @@ body {
   color: black;
   font-size: 24px;
   font-weight: normal;
+}
+
+.zoom-item {
+  width: calc(100vw - 310px);
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: black;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.joinButton {
+  border: none;
+  border-radius: 8px;
+  background-color: blue;
+  width: 80px;
+  height: 30px;
+  font-size: 12px;
+  font-weight: bold;
+
 }

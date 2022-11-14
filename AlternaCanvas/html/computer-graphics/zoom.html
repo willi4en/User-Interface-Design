@@ -6,13 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alterna-Canvas</title>
     <link rel="stylesheet" href="/basic-template/css/zoom.css" />
+    <link rel="stylesheet" href="../../css/styles.css" />
   </head>
   <body>
     <div class="container">
       <nav class="navbar">
-        <a href="./class1.html">User Interface</a>
-        <a href="./class2.html">Senior Design</a>
-        <a href="./class3.html">Computer Graphics</a>
+        <a class="red-background" href="../dashboard.html"
+          ><img src="../../images/navlogo.png"
+        /></a>
+        <div id="classesNav" class="classes-nav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+            >&times;</a
+          >
+          <a href="../user-interface/class1.html">User Interface</a>
+          <a href="../senior-design/class2.html">Senior Design</a>
+          <a href="../computer-graphics/class3.html">Computer Graphics</a>
+        </div>
       </nav>
       <nav class="courseNavBar">
         <a href="./announcements.html">Announcements</a>
@@ -30,6 +39,13 @@
             <label>Start Time</label>
             <label>Topic</label>
             <label>Meeting ID</label>
+            <label></label>
+          </div>
+          <div class="zoom-item">
+            <label>1:00 PM</label>
+            <label>User Interface</label>
+            <label>8974365</label>
+            <button>Join</button>
           </div>
         </div>
       </div>
