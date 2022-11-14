@@ -21,21 +21,7 @@ window.onload = function() {
         homeModal = document.getElementById('homeDiv'),
         plantModal = document.getElementById('plantDiv'),
         loginModal = document.getElementById('loginDiv'),
-        createAccountModal = document.getElementById('createAccountDiv'),
-        addPlantMenuBtn = document.getElementById('addPlant'),
-        addPlantBtn = document.getElementById('addPlantBtn'),
-        removePlantBtn = document.getElementById('removePlant');
-        addPlantModal = document.getElementById('addPlantDiv'),
-        plantList = document.getElementById('plantListDiv'),
-        homeBtn = document.getElementById('homeBtn'),
-        profileBtn = document.getElementById('profileBtn'),
-        profileModal = document.getElementById('profileModal'),
-        logOutBtn = document.getElementById('logOutBtn'),
-        temperatureGraphBtn = document.getElementById('temperatureBtn'),
-        waterGraphBtn = document.getElementById('waterLevelBtn'),
-        lightGraphBtn = document.getElementById('lightLevelBtn'),
-        plantImage = document.getElementById('plantImage'),
-        plantImageDiv = document.getElementById('plantImageDiv');
+        createAccountModal = document.getElementById('createAccountDiv')
     //#endregion
 
     //#region Window Click
@@ -49,17 +35,6 @@ window.onload = function() {
             document.getElementById('createUsername').value = "";
             document.getElementById('createPassword').value = "";
             createAccountModal.style.display = "none";
-        }
-        else if (event.target == addPlantModal) {
-            addPlantModal.style.display = "none";
-            document.getElementById('addPlantName').innerHTML = "";
-            document.getElementById('addPlantDesc').innerHTML = "";
-        }
-        else if (event.target != profileModal && event.target != document.getElementById('menuDiv') && event.target != profileBtn) {
-            profileModal.style.display = "none";
-        }
-        if (event.target != plantImageDiv && event.target != plantImage) {
-            plantImageDiv.style.display = "none";
         }
         return false;
     }

@@ -31,9 +31,15 @@ body {
 }
 
 .courseNavBar {
-  width: 100px;
+  width: 120px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: lightgray;
 }
+
+.courseNavBar a {
+    text-decoration: none;
+    color: black;
+    margin-bottom: 16px;
+  }
