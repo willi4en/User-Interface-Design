@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alterna-Canvas</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <script type="text/javascript" src="/js/main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <!--This is the navbar-->
+      <nav class="navbar">
+        <a class="red-background" href="/html/dashboard.html"
+          ><img src="/images/navlogo.png"
+        /></a>
+        <a class="nav-button" href="/html/dashboard.html">
+          <img class="nav-icon" src="/images/speedometer.png" />
+          <div class="nav-title">Dashboard</div>
+        </a>
+        <a class="nav-button" onclick="openNav()">
+          <img class="nav-icon" src="/images/courses.png" />
+          <div class="nav-title">Courses</div>
+        </a>
+        <a class="nav-button" href="/html/calendar.html">
+          <img class="nav-icon" src="/images/calendar.png" />
+          <div class="nav-title">Calendar</div>
+        </a>
+      </nav>
+
+      <!--This is the slide out menu for the classes-->
+      <div id="classesNav" class="classes-nav">
+        <div class="classes-nav-header">
+          <h2 class="classes-nav-title">Courses</h2>
+          <a href="javascript:void(0)" class="close-btn" onclick="closeNav()"
+            >&times;</a
+          >
+        </div>
+        <div class="classes-nav-links">
+          <a class="classes-nav-link" href="/html/user-interface/class1.html"
+            >User Interface</a
+          >
+          <a class="classes-nav-link" href="/html/senior-design/class2.html"
+            >Senior Design</a
+          >
+          <a class="classes-nav-link" href="/html/computer-graphics/class3.html"
+            >Computer Graphics</a
+          >
+        </div>
+      </div>
+
+      <!--This is the main container for the dashboard-->
+      <div class="main-container">
+        <p>This is the main container</p>
+      </div>
+    </div>
+  </body>
+</html>
