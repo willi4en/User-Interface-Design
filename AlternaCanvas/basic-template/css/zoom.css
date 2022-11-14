@@ -44,20 +44,6 @@ body {
   flex-direction: column;
 }
 
-.courseNavBar {
-  width: 120px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: lightgray;
-}
-
-.courseNavBar a {
-  text-decoration: none;
-  color: black;
-  margin-bottom: 16px;
-}
-
 .list-header{
   width: calc(100vw - 310px);
   margin-left: 20px;

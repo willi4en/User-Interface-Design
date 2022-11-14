@@ -31,7 +31,7 @@ body {
 }
 
 .courseNavBar {
-  width: 100px;
+  width: 120px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
