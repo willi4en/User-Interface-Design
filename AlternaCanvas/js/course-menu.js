@@ -3,6 +3,7 @@ class CourseMenu extends HTMLElement {
     this.innerHTML = `
         <nav id="courseMenu" class="course-menu">
           <div class="course-menu-body">
+            <a href="./class-home.html">Home</a>
             <a href="./announcements.html">Announcements</a>
             <a href="./assignments.html">Assignments</a>
             <a href="./grades.html">Grades</a>
