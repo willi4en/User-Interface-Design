@@ -5,36 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alterna-Canvas</title>
-    <link rel="stylesheet" href="/basic-template/css/grades.css" />
-    <link rel="stylesheet" href="../../css/styles.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <script type="text/javascript" src="/js/nav-bar.js"></script>
+    <script type="text/javascript" src="/js/course-menu.js"></script>
   </head>
+
   <body>
     <div class="container">
-      <nav class="navbar">
-        <a class="red-background" href="../dashboard.html"
-          ><img src="../../images/navlogo.png"
-        /></a>
-        <div id="classesNav" class="classes-nav">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
-            >&times;</a
-          >
-          <a href="../user-interface/class1.html">User Interface</a>
-          <a href="../senior-design/class2.html">Senior Design</a>
-          <a href="../computer-graphics/class3.html">Computer Graphics</a>
-        </div>
-      </nav>
-      <nav class="courseNavBar">
-        <a href="./announcements.html">Announcements</a>
-        <a href="./assignments.html">Assignments</a>
-        <a href="./grades.html">Grades</a>
-        <a href="./syllabus.html">Syllabus</a>
-        <a href="./modules.html">Modules</a>
-        <a href="./zoom.html">Zoom</a>
-      </nav>
+      <nav-bar></nav-bar>
+
       <div class="main-container">
-        <div class="title-container">
-          <label style="margin-left: 20px; margin-top: 10px;">Grades</label>
-          <hr style="width: calc(100vw - 300px); margin-left: 15px; margin-right: 20px;">
+        <div class="main-header-container">
+          <a
+            class="hamburger"
+            href="javascript:void(0)"
+            onclick="toggleCourseMenu()"
+            ><img src="/images/hamburger.png"
+          /></a>
+          <div class="main-header">Senior Design</div>
+        </div>
+        <div class="main-body-container">
+          <course-menu></course-menu>
+          <div id="mainBody" class="main-body">
+            <div class="body-title">Grades</div>
+          </div>
         </div>
       </div>
     </div>

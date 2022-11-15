@@ -1,52 +1,5 @@
-html,
-body {
-  margin: 0px;
-}
-
-.container {
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-}
-
-.navbar {
-  width: 84px;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: black;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: white;
-  margin-bottom: 16px;
-}
-
-.main-container {
-  display: flex;
-  flex: 1;
-  justify-content: flex-start;
-  align-items: flex-start;
-  flex-direction: column;
-}
-
-.title-container {
-  width: 100%;
-  height: 250px;
-  display: flex;
-  flex: 1;
-  justify-content: flex-start;
-  align-items: flex-start;
-  color: rgb(0, 191, 255);
-  font-size: 42px;
-  font-weight: bold;
-  flex-direction: column;
-}
-
-.list-header{
-  width: calc(100vw - 310px);
-  margin-left: 20px;
+.list-header {
+  margin: 0 20px;
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -59,7 +12,6 @@ body {
 }
 
 .zoom-item {
-  width: calc(100vw - 310px);
   margin-left: 20px;
   display: flex;
   align-items: center;
@@ -69,7 +21,7 @@ body {
   font-weight: normal;
 }
 
-.joinButton {
+.join-button {
   border: none;
   border-radius: 8px;
   background-color: blue;
@@ -77,5 +29,4 @@ body {
   height: 30px;
   font-size: 12px;
   font-weight: bold;
-
 }
