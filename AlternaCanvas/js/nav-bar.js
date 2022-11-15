@@ -9,7 +9,7 @@ class NavBar extends HTMLElement {
           <img class="nav-icon" src="/images/speedometer.png" />
           <div class="nav-title">Dashboard</div>
         </a>
-        <a class="nav-button" onclick="openNav()">
+        <a class="nav-button" onclick="toggleNav()">
           <img class="nav-icon" src="/images/courses.png" />
           <div class="nav-title">Courses</div>
         </a>
@@ -43,14 +43,20 @@ class NavBar extends HTMLElement {
   }
 }
 
-// Open and close functions for the class sidenav
-// Set the width of the side navigation to 250px
-function openNav() {
-  document.getElementById("classesNav").style.width = "250px";
+var isNavBarClosed = true;
+
+function toggleNav() {
+  if (isNavBarClosed) {
+    isNavBarClosed = false;
+    document.getElementById("classesNav").style.width = "364px";
+  } else {
+    isNavBarClosed = true;
+    document.getElementById("classesNav").style.width = "0";
+  }
 }
 
-// Set the width of the side navigation to 0
 function closeNav() {
+  isNavBarClosed = true;
   document.getElementById("classesNav").style.width = "0";
 }
 
