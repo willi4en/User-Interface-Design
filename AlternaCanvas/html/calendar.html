@@ -7,9 +7,12 @@
     <title>Alterna-Canvas</title>
     <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/quick-calendar.css" />
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
     <script type="text/javascript" src="/js/nav-bar.js"></script>
-    <script type="text/javascript" src="/js/course-menu.js"></script>
+    <script type="text/javascript" src="/js/quick-calendar.js"></script>
+    <script type="text/javascript" src="/js/quotes.js"></script>
   </head>
 
   <body>
@@ -18,18 +21,13 @@
 
       <div class="main-container">
         <div class="main-header-container">
-          <a
-            class="hamburger"
-            href="javascript:void(0)"
-            onclick="toggleCourseMenu()"
-            ><img src="/images/hamburger.png"
-          /></a>
-          <div class="main-header">Computer Graphics</div>
+          <div class="main-header">Calendar</div>
         </div>
-        <div class="main-body-container">
-          <course-menu></course-menu>
-          <div id="mainBody" class="main-body">
-            <div class="body-title">Course Home</div>
+        <div class="main-dashboard-container">
+          <div class="main-dashboard">
+            <div class="main-dashboard-date">
+              Today is Thursday, October 13th!
+            </div>
           </div>
         </div>
       </div>

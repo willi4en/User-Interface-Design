@@ -17,6 +17,10 @@ class NavBar extends HTMLElement {
           <img class="nav-icon" src="/images/calendar.png" />
           <div class="nav-title">Calendar</div>
         </a>
+        <a class="nav-button" href="/html/goals.html">
+          <img class="nav-icon" src="/images/tick.png" />
+          <div class="nav-title">Goals</div>
+        </a>
       </nav>
 
       <!--This is the slide out menu for the classes-->
@@ -28,13 +32,13 @@ class NavBar extends HTMLElement {
           >
         </div>
         <div class="classes-nav-links">
-          <a class="classes-nav-link" href="/html/user-interface/class-home.html"
+          <a class="classes-nav-link" href="/html/user-interface/course-home.html"
             >(22FS-Full) USER INTERFACE</a
           >
-          <a class="classes-nav-link" href="/html/senior-design/class-home.html"
+          <a class="classes-nav-link" href="/html/senior-design/course-home.html"
             >(22FS-Full) SENIOR DESIGN</a
           >
-          <a class="classes-nav-link" href="/html/computer-graphics/class-home.html"
+          <a class="classes-nav-link" href="/html/computer-graphics/course-home.html"
             >(22FS-Full) COMPUTER GRAPHICS</a
           >
         </div>

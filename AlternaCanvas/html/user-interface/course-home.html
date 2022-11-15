@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alterna-Canvas</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <link rel="stylesheet" href="/css/course-home.css" />
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <script type="text/javascript" src="/js/nav-bar.js"></script>
+    <script type="text/javascript" src="/js/course-menu.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav-bar></nav-bar>
+
+      <div class="main-container">
+        <div class="main-header-container">
+          <a
+            class="hamburger"
+            href="javascript:void(0)"
+            onclick="toggleCourseMenu()"
+            ><img src="/images/hamburger.png"
+          /></a>
+          <div class="main-header">User Interface</div>
+        </div>
+        <div class="main-body-container">
+          <course-menu></course-menu>
+          <div id="mainBody" class="main-body course-home-body">
+            <div class="body-title">Course Home</div>
+            <div class="course-home-container">
+              <div class="body-announcements-container">
+                <div class="body-announcements">
+                  <div class="course-home-title">Announcements</div>
+                  <div class="announcements-container">
+                    <div class="announcement-title">
+                      Presentation 1 Sign-Ups Now Available!
+                    </div>
+                    <div class="announcement-date-author">
+                      Jillian Aurisano, October 12th 2022
+                    </div>
+                    <div class="announcement-body">
+                      Hello all! Sign-ups for presentation 1 are now available
+                      in Canvas. Please check the Google Docs link provided and
+                      enter your name to claim a presentation spot. Good luck
+                      finishing up your projects!
+                    </div>
+                    <div class="announcement-title">
+                      Reminder: Presentation 1 Implementation and Documentation
+                      Due
+                    </div>
+                    <div class="announcement-date-author">
+                      Jillian Aurisano, October 10th 2022
+                    </div>
+                    <div class="announcement-body">
+                      Hello all! Just wanted to give you guys a quick reminder
+                      that the implementation and documentation for project 1
+                      are due this week. Project 1 implementation is due this
+                      Friday (the 14th) and the documentation is due this Sunday
+                      (the 16th). Please feel free to reach out to me if you
+                      have any questions regarding your project, otherwise good
+                      luck getting all of your work finished! I can't wait to
+                      see what you guys come up with!
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="vertical-border"></div>
+              <div class="body-assignments-progress-container">
+                <div class="body-assignments">
+                  <div class="course-home-title">Upcoming Assignments</div>
+                  <div class="assignments-container">
+                    <div class="assignment-item">
+                      User Interface: Project 1 Implementation
+                    </div>
+                    <div class="assignment-date">
+                      Due Friday, October 14th at 11:59pm
+                    </div>
+                    <div class="assignment-item">
+                      User Interface: Project 1 Documentation
+                    </div>
+                    <div class="assignment-date">
+                      Due Sunday, October 16th at 11:59pm
+                    </div>
+                  </div>
+                </div>
+                <div class="body-progress">
+                  <div class="course-home-title">Progress (User Interface)</div>
+                  <div class="progress-container">
+                    <div class="progressbar">
+                      <div class="progressbar-title">Homework</div>
+                      <div
+                        class="progressbar-circle"
+                        aria-valuenow="75"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="--value: 75"
+                      ></div>
+                    </div>
+                    <div class="progressbar progressbar-middle">
+                      <div class="progressbar-title">Projects</div>
+                      <div
+                        class="progressbar-circle"
+                        aria-valuenow="50"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="--value: 50"
+                      ></div>
+                    </div>
+                    <div class="progressbar">
+                      <div class="progressbar-title">Quizzes and Exams</div>
+                      <div
+                        class="progressbar-circle"
+                        aria-valuenow="100"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        style="--value: 100"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

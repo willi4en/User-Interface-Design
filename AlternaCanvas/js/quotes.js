@@ -21,8 +21,9 @@ var quotes = [
 
 function generateQuote() {
   var randomNumber = Math.floor(Math.random() * quotes.length);
-  document.getElementById("quote").innerHTML = quotes[randomNumber];
-  console.log("test");
+  if (document.getElementById("quote") !== null) {
+    document.getElementById("quote").innerHTML = quotes[randomNumber];
+  }
 }
 
 window.onload = generateQuote;
