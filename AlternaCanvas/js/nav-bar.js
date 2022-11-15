@@ -29,13 +29,13 @@ class NavBar extends HTMLElement {
         </div>
         <div class="classes-nav-links">
           <a class="classes-nav-link" href="/html/user-interface/class-home.html"
-            >User Interface</a
+            >(22FS-Full) USER INTERFACE</a
           >
           <a class="classes-nav-link" href="/html/senior-design/class-home.html"
-            >Senior Design</a
+            >(22FS-Full) SENIOR DESIGN</a
           >
           <a class="classes-nav-link" href="/html/computer-graphics/class-home.html"
-            >Computer Graphics</a
+            >(22FS-Full) COMPUTER GRAPHICS</a
           >
         </div>
       </div>

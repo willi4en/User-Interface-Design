@@ -1,0 +1,39 @@
+.calendar {
+  width: 300px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25px, 1fr));
+  grid-gap: 10px;
+  box-sizing: border-box;
+}
+
+.calendar-day,
+.calendar-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  color: black;
+}
+
+.calendar-prev,
+.calendar-next {
+  color: lightgray;
+}
+
+.calendar-day {
+  font-weight: 600;
+}
+
+.current-day {
+  background-color: red;
+  border-radius: 50%;
+}
+
+.calendar-number:hover {
+  background-color: gray;
+  color: white !important;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 100%;
+}

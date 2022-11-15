@@ -1,0 +1,144 @@
+.main-dashboard-container {
+  height: 100%;
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+}
+
+.main-dashboard {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-dashboard-date {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 64px;
+  margin-top: 64px;
+}
+
+.main-dashboard-calendar-progress,
+.main-dashboard-goals-quotes {
+  flex: 1;
+  display: flex;
+}
+
+.main-dashboard-calendar,
+.main-dashboard-progress,
+.main-dashboard-goals,
+.main-dashboard-quotes {
+  flex: 1;
+}
+
+.main-dashboard-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 32px;
+  text-decoration: underline;
+}
+
+.progress-container {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  margin-top: 16px;
+}
+
+.progressbar-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.progressbar-middle {
+  margin: 0 64px;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: center;
+}
+
+.calendar-upcoming {
+  width: 300px;
+  padding: 20px;
+}
+
+.calendar-upcoming-title {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+  color: red;
+}
+
+.calendar-upcoming-item {
+  text-align: center;
+}
+
+.calendar-upcoming-date {
+  text-align: center;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.goal-container {
+  padding: 0 128px;
+}
+
+.goal {
+  margin-bottom: 32px;
+}
+
+.quote {
+  padding: 0 256px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* This css comes from Shantanu Jana and is free to use!
+https://dev.to/shantanu_jana/circular-progress-bar-using-html-and-css-1oda
+*/
+
+@keyframes growProgressBar {
+  0%,
+  33% {
+    --pgPercentage: 0;
+  }
+  100% {
+    --pgPercentage: var(--value);
+  }
+}
+
+@property --pgPercentage {
+  syntax: "<number>";
+  inherits: false;
+  initial-value: 0;
+}
+
+.progressbar-circle {
+  --pgPercentage: var(--value);
+  animation: growProgressBar 3s 1 forwards;
+  width: 192px;
+  height: 192px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(
+      closest-side,
+      white 80%,
+      transparent 0 99.9%,
+      white 0
+    ),
+    conic-gradient(red calc(var(--pgPercentage) * 1%), white 0);
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(192px / 5);
+  color: black;
+}
+
+.progressbar-circle::before {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) "%";
+}
