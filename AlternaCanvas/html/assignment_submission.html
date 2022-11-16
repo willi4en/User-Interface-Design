@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alterna-Canvas</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/navbar.css" />
+    <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+    <script type="text/javascript" src="/js/nav-bar.js"></script>
+    <script type="text/javascript" src="/js/course-menu.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <nav-bar></nav-bar>
+
+      <div class="main-container">
+        <div class="main-header-container">
+          <a
+            class="hamburger"
+            href="javascript:void(0)"
+            onclick="toggleCourseMenu()"
+            ><img src="/images/hamburger.png"
+          /></a>
+          <div class="main-header">Senior Design</div>
+        </div>
+        <div class="main-body-container">
+          <course-menu></course-menu>
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -21,9 +21,8 @@
 }
 
 .join-button {
-  border-color: darkgray;
-  color: darkgray;
-  border-width: 1px;
+  border: none;
+  color: rgb(83, 83, 83);
   border-radius: 8px;
   background-color: rgb(233, 233, 233);
   width: 80px;

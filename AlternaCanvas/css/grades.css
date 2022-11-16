@@ -1,0 +1,32 @@
+
+.grades-container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.grades-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.grade-item {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    font-weight: normal;
+    justify-content: space-between;
+    border-style: none none solid none;
+    border-width: 1px;
+    border-color: lightgray;
+}
+
+.grade-item:hover {
+    background-color: #eef7ff;
+}
