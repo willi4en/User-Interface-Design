@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/calendar.css" />
     <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
     <script type="text/javascript" src="/js/nav-bar.js"></script>
+    <script type="text/javascript" src="/js/quick-calendar.js"></script>
   </head>
 
   <body>
@@ -29,9 +30,57 @@
             <div class="main-calendar-container">
               <div class="calendar-container">
                 <div class="calendar-title">Your Calendar</div>
+                <div class="calendar-month">October</div>
+                <quick-calendar></quick-calendar>
+                <div class="calendar-upcoming">
+                  <div class="calendar-upcoming-title">
+                    Upcoming Assignments
+                  </div>
+                  <div class="calendar-upcoming-item">
+                    Computer Graphics: Assignment 7
+                  </div>
+                  <div class="calendar-upcoming-date">
+                    Due Friday, October 14th at 11:59pm
+                  </div>
+                  <div class="calendar-upcoming-item">
+                    User Interface: Project 1 Implementation
+                  </div>
+                  <div class="calendar-upcoming-date">
+                    Due Friday, October 14th at 11:59pm
+                  </div>
+                  <div class="calendar-upcoming-item">
+                    User Interface: Project 1 Documentation
+                  </div>
+                  <div class="calendar-upcoming-date">
+                    Due Sunday, October 16th at 11:59pm
+                  </div>
+                </div>
               </div>
               <div class="create-event-container">
                 <div class="calendar-title">Create a New Calendar Event</div>
+                <form class="calendar-event-form">
+                  <div class="calendar-form-item">
+                    <label class="event-label" for="event-name"
+                      >Enter the event name</label
+                    >
+                    <input class="event-input" type="text" name="event-name" />
+                  </div>
+                  <div class="calendar-form-item">
+                    <label class="event-label" for="event-date"
+                      >Enter the event due date</label
+                    >
+                    <input class="event-input" type="datetime-local" name="event-date" />
+                  </div>
+                  <div class="calendar-form-item">
+                    <label class="event-label" for="event-name"
+                      >Enter the event description</label
+                    >
+                    <textarea class="event-input event-textarea" name="event-name"></textarea>
+                  </div>
+                  <div class="calendar-form-item">
+                    <input type="submit" class="event-submit"></input>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
