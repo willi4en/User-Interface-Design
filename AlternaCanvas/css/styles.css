@@ -66,10 +66,15 @@ body {
   margin-right: 12px;
   position: relative;
   top: 2px;
+  right: -2px;
 }
 
 .vertical-border {
-  border-left: 1px solid gray;
-  border-right: 1px solid gray;
-  margin: 64px 0;
+  border-left: 1px solid lightgray;
+  margin: 32px 0;
+}
+
+.horizontal-border {
+  border-top: 1px solid lightgray;
+  margin-right: 32px;
 }

@@ -1,0 +1,48 @@
+.modules-container {
+  margin-right: 16px;
+}
+
+.module {
+  padding: 16px;
+  margin-top: 16px;
+}
+
+.first-module {
+  margin-top: 24px;
+}
+
+.module-header,
+.module-item {
+  padding: 12px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  border: 1px solid #c7cdd1;
+}
+
+.module-header {
+  background-color: #f5f5f5;
+}
+
+.module-item {
+  border-top: none;
+}
+
+.module-item:hover {
+  background-color: #eef7ff;
+}
+
+.module-icon {
+  width: 20px;
+  margin-right: 16px;
+  margin-left: 4px;
+}
+
+.module-text {
+  position: relative;
+  top: -2px;
+}
+
+.module-text:hover {
+  text-decoration: underline;
+}
