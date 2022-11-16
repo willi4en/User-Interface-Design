@@ -41,6 +41,8 @@
 .module-text {
   position: relative;
   top: -2px;
+  text-decoration: none;
+  color: black;
 }
 
 .module-text:hover {
