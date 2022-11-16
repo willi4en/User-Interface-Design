@@ -22,7 +22,8 @@
 }
 
 .join-button {
-  border-color: black;
+  border-color: darkgray;
+  color: darkgray;
   border-width: 1px;
   border-radius: 8px;
   background-color: rgb(233, 233, 233);
