@@ -1,0 +1,18 @@
+.main-goals-container,
+.goals-container,
+.create-goals-container {
+  flex: 1;
+  display: flex;
+}
+
+.goals-container,
+.create-goals-container {
+  justify-content: center;
+}
+
+.goals-title {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 32px;
+  text-decoration: underline;
+}
