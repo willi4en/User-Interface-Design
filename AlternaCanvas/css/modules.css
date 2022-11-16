@@ -32,6 +32,25 @@
   background-color: #eef7ff;
 }
 
+.assignment-item {
+  padding: 12px;
+  height: 32px;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #c7cdd1;
+  border-top: none;
+  flex-direction: column;
+}
+
+.assignment-item:hover {
+  background-color: #eef7ff;
+}
+
+.assignment-stats {
+  font-size: 14px;
+  margin-left: 40px;
+}
+
 .module-icon {
   width: 20px;
   margin-right: 16px;
