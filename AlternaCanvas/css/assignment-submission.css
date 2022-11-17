@@ -1,0 +1,13 @@
+
+.assignment-header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.assignment-stats {
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+}
