@@ -9,6 +9,7 @@ window.onload = function() {
     dueDate.innerText = localStorage.getItem('dueDate');
     assignmentName.innerText = localStorage.getItem('name');
     points.innerText = localStorage.getItem('points');
+    localStorage.clear();
 }
 
 function assignmentClick(link, name, dueDate, points) {

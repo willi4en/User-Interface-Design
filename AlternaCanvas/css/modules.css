@@ -67,3 +67,7 @@
 .module-text:hover {
   text-decoration: underline;
 }
+
+.endLabel {
+  margin-left: auto;
+}
