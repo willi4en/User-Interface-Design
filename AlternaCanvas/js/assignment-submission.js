@@ -20,7 +20,8 @@ function assignmentClick(link, name, dueDate, points) {
 }
 
 function submitClick() {
-    
+    modal = document.getElementById('submissionDiv');
+    modal.display = 'flex';
 }
 
 function exitSubmission() {
@@ -32,5 +33,5 @@ function doneClick() {
     modal = document.getElementById('submissionDiv');
     modal.display = 'none';
 
-    
+
 }
