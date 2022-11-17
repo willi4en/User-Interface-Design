@@ -30,21 +30,40 @@
         </div>
         <div class="main-body-container">
           <course-menu></course-menu>
-          <div id="mainBody" class="main-body">
+          <div id="mainBody" class="main-body" style="width: 100%;">
             <div class="assignment-header">
-              <label id="assignment-name" style="font-size: 24px; font-weight: bold;"></label>
-              <div class="assignment-stats">
-                <label style="font-weight: bold;">Due Date</label>
-                <label id="due-date"></label>
-                <label style="font-weight: bold; margin-left: 20px;">Points</label>
-                <label id="total-points"></label>
-              </div>
+              <div style="display: flex; flex-direction:column">
+                <label id="assignment-name" style="font-size: 24px; font-weight: bold;"></label>
+                <div class="assignment-stats">
+                  <label style="font-weight: bold;">Due Date</label>
+                  <label id="due-date" style="margin-left: 10px;"></label>
+                  <label style="font-weight: bold; margin-left: 20px;">Points</label>
+                  <label id="total-points" style="margin-left: 10px;"></label>
+                </div>
+              </div>              
+              <label id="submit-label" class="submit-label">Submitted</label>
+              <button class="submit-button" onclick="submitClick()">Submit</button>
             </div>
             <div class="horizontal-border"></div>
             <embed id="assignmentDesc"
               width="100%"
               height="98%"/>
-          </div>          
+          </div>  
+          <div id="submissionDiv" class="submissionDiv" onclick="exitSubmission()">
+            <form class="modal-content animate">      
+                <div class="content">
+                  <div style="display: flex; flex-direction: row; width: 100%">
+                    <label style="font-size: 24px; font-weight: bold; ">Document Submission</label>
+                    <input type="file">
+                  </div>
+                  <div>
+                    <label style="font-size: 24px; font-weight: bold; ">Text Submission</label>
+                    <textarea style="width: 400px; height: 300px"></textarea>
+                  </div>
+                  <button class="doneButton" onclick="doneClick()">Done</button>
+                </div>
+            </form>
+          </div>       
         </div>
       </div>
     </div>
